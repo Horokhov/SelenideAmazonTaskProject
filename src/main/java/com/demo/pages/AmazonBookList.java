@@ -30,7 +30,7 @@ public class AmazonBookList extends PageTools {
 
     public Book checkEveryProductStats(By everyNextProductLink){
             scrollToElement(everyNextProductLink);
-            waitForElementVisibility(everyNextProductLink);
+            waitForElementPresent(everyNextProductLink);
             click(everyNextProductLink);
             Book book = Pages.getAmazonBookPage().getBookInfo();
             Selenide.back();
