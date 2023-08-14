@@ -29,7 +29,6 @@ public class AmazonBookList extends PageTools {
     }
 
     public Book checkEveryProductStats(By everyNextProductLink){
-            waitForElementVisibility(everyNextProductLink);
             scrollToElement(everyNextProductLink);
             waitForElementVisibility(everyNextProductLink);
             click(everyNextProductLink);
