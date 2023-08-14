@@ -15,6 +15,10 @@ public class Book {
         this.bestsellerStatus = bestsellerStatus;
     }
 
+    public String getProductName() {
+        return productName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -30,7 +34,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return String.format("|"+productName+"|"+author+"|"+price+"|"+bestsellerStatus+"|");
+        return String.format("|"+productName+"|"+author+"|"+price+"|"+bestsellerStatus+"|"+"\n");
     }
 
 }

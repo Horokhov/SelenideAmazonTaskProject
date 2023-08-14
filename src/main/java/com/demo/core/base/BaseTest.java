@@ -4,6 +4,7 @@ import com.codeborne.selenide.Selenide;
 import com.demo.core.allure.AllureLogger;
 import com.demo.core.config.SelenideConfig;
 import com.demo.core.utils.Constants;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -14,6 +15,7 @@ public class BaseTest extends AllureLogger {
     @BeforeMethod(alwaysRun = true, description = "Opening web browser...")
     public void setUp() {
         logInfo("Creating web driver configuration...");
+
         SelenideConfig.createBrowserConfig(System.getProperty("selenide.browser", "chrome"));
         configLog(this.getClass().getSimpleName());
 

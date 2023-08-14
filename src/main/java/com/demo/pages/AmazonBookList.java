@@ -2,36 +2,41 @@ package com.demo.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import com.demo.core.base.PageTools;
+import com.demo.entities.Book;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import static com.codeborne.selenide.Selenide.*;
 
 public class AmazonBookList extends PageTools {
 
-    By productCard = new By.ByXPath("//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-2']");
+    By productCard = new By.ByXPath("//h2[contains(@class,'a-size-mini a-spacing-none a-color-base s-line-clamp')]");
 
     By productTitle = new By.ByXPath("//span[@id='productTitle']");
     ElementsCollection listOfProducts = getSelenideElements(productCard);
-    int size = listOfProducts.size();
 
-    public void checkEveryProductStats(){
-
-        for (int i = 1; i <= size; i++) {
-            By everyNextProductLink = new By.ByXPath("(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])"+"["+i+"]");
-
-            waitForElementPresent(productCard);
-            scrollToElement(everyNextProductLink);
-            waitForElementPresent(everyNextProductLink);
-            click(everyNextProductLink);
-            waitForElementPresent(productTitle);
-            back();
-            System.out.println(size);
-        }
-
+    By everyNextProductLink = new By.ByXPath("");
+    public By setEveryNextProductLink(By everyNextProductLink) {
+        this.everyNextProductLink = everyNextProductLink;
+        return everyNextProductLink;
     }
+
+    int size = listOfProducts.size();
+    List<Book> bookList = new ArrayList<>();
+    public int getSize() {
+        return size;
+    }
+
+    public Book checkEveryProductStats(By everyNextProductLink){
+            waitForElementVisibility(everyNextProductLink);
+            scrollToElement(everyNextProductLink);
+            waitForElementVisibility(everyNextProductLink);
+            click(everyNextProductLink);
+            Book book = Pages.getAmazonBookPage().getBookInfo();
+            Selenide.back();
+            return book;
+    }
+
+
 }

@@ -1,5 +1,7 @@
 package com.demo.pages;
 
+import com.demo.actions.AmazonBooksActions;
+
 public class Pages {
     private static VisitPage visitPage;
     private static RegistrationPage registrationPage;
@@ -10,6 +12,8 @@ public class Pages {
     private static AmazonHomePage amazonHomePage;
     private static AmazonBookPage amazonBookPage;
     private static AmazonBookList amazonBookList;
+
+    private static AmazonBooksActions amazonBooksActions;
 
     public static VisitPage visitPage() {
         if (visitPage == null) {
@@ -69,5 +73,11 @@ public class Pages {
             amazonBookList = new AmazonBookList();
         }
         return amazonBookList;
+    }
+    public static AmazonBooksActions getAmazonBooksActions() {
+        if (amazonBooksActions == null) {
+            amazonBooksActions = new AmazonBooksActions();
+        }
+        return amazonBooksActions;
     }
 }
