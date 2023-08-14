@@ -20,7 +20,7 @@ public class AmazonBooksActions extends BaseActions{
     List<Book> bookList = new ArrayList<>();
     public List<Book> collectEachBookInTheList(){
         for (int i = 1; i <= Pages.getAmazonBookList().getSize(); i++) {
-            By eachNextBookLink = Pages.getAmazonBookList().setEveryNextProductLink(new By.ByXPath("(//a[@class='a-link-normal s-no-outline'])"+"["+i+"]"));
+            By eachNextBookLink = Pages.getAmazonBookList().setEveryNextProductLink(new By.ByXPath("(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])"+"["+i+"]"));
             Book book = Pages.getAmazonBookList().checkEveryProductStats(eachNextBookLink);
             bookList.add(book);
         }
