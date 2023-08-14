@@ -13,7 +13,7 @@ public class AmazonBookPage extends PageTools{
     String bestSeller = "Best Seller";
 
     public Book getBookInfo(){
-        waitForElementVisibility(bookTitle);
+        waitForElementPresent(bookPrice);
         String name = getElementText(bookTitle);
         String author = getElementText(bookAuthor);
         String price = getElementText(bookPrice);

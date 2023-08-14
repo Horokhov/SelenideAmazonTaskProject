@@ -12,10 +12,7 @@ import java.util.List;
 public class AmazonBookList extends PageTools {
 
     By productCard = new By.ByXPath("//h2[contains(@class,'a-size-mini a-spacing-none a-color-base s-line-clamp')]");
-
-    By productTitle = new By.ByXPath("//span[@id='productTitle']");
     ElementsCollection listOfProducts = getSelenideElements(productCard);
-
     By everyNextProductLink = new By.ByXPath("");
     public By setEveryNextProductLink(By everyNextProductLink) {
         this.everyNextProductLink = everyNextProductLink;
@@ -32,9 +29,9 @@ public class AmazonBookList extends PageTools {
             scrollToElement(everyNextProductLink);
             waitForElementPresent(everyNextProductLink);
             click(everyNextProductLink);
-            waitForElementVisibility(productTitle);
             Book book = Pages.getAmazonBookPage().getBookInfo();
             Selenide.back();
+            waitForElementVisibility(everyNextProductLink);
             return book;
     }
 
