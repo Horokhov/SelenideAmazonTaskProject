@@ -32,6 +32,7 @@ public class AmazonBookList extends PageTools {
             scrollToElement(everyNextProductLink);
             waitForElementPresent(everyNextProductLink);
             click(everyNextProductLink);
+            waitForElementVisibility(productTitle);
             Book book = Pages.getAmazonBookPage().getBookInfo();
             Selenide.back();
             return book;
