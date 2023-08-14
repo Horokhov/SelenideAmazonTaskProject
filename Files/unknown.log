@@ -1,145 +1,121 @@
-14:12:05 | INFO | ComparingAGivenBookWithTheFirstPageBooksInAmazon:28 | Creating web driver configuration...
-14:12:05 | INFO | ComparingAGivenBookWithTheFirstPageBooksInAmazon:28 | Open browser...
-14:12:05 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
-14:12:05 | INFO | FileHelper:56                            | Creating folder: /Users/max_horokhov/Desktop/Projects/Archive/build/downloads/1692011525866_25118_1
-14:12:06 | INFO | WebDriverFactory:135                     | BrowserName=chrome Version=115.0.5790.170 Platform=MAC
-14:12:06 | INFO | WebDriverFactory:78                      | Selenide v. 5.19.0
-14:12:06 | INFO | WebDriverFactory:129                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-14:12:06 | INFO | CreateDriverCommand:70                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on MAC (87f018464327f612ea7e8ff93d1d0774)
-14:12:08 | INFO | TestListener:18                          | STARTED test: bookInTheListVerification
-14:12:08 | INFO | SelenideTools:52                         | Opening url 'https://www.amazon.com/'
-14:12:09 | INFO | AmazonHomePage:28                        | Choose filter option --> Books, element --> By.xpath: //select[@id='searchDropdownBox']
-14:12:09 | INFO | AmazonHomePage:28                        | Search for item 'Java
-14:12:09 | INFO | AmazonHomePage:28                        | Search for item, element --> By.id: nav-search-submit-button
-14:12:11 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[1]
-14:12:11 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[1]
-14:12:14 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:14 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:14 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:14 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:15 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[2]
-14:12:15 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[2]
-14:12:18 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:18 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:18 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:18 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:18 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[3]
-14:12:18 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[3]
-14:12:21 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:21 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:21 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:21 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:22 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[4]
-14:12:22 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[4]
-14:12:25 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:25 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:25 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:25 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:25 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[5]
-14:12:25 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[5]
-14:12:28 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:28 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:28 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:28 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:28 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[6]
-14:12:28 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[6]
-14:12:31 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:31 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:31 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:31 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:31 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[7]
-14:12:31 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[7]
-14:12:34 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:34 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:34 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:34 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:34 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[8]
-14:12:34 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[8]
-14:12:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:37 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[9]
-14:12:37 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[9]
-14:12:40 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:40 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:40 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:40 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:41 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[10]
-14:12:41 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[10]
-14:12:43 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
-14:12:43 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
-14:12:43 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
-14:12:43 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
-14:12:44 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[11]
-14:12:44 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline'])[11]
-14:13:07 | ERROR | ScreenShotLaboratory:357                 | Failed to take screenshot to 1692011587326.0
-org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.170)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Maxs-MBP', ip: 'fe80:0:0:0:1cdd:3fb6:70b9:d68a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.4.1', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: /var/folders/y8/hyv82j656hb...}, goog:chromeOptions: {debuggerAddress: localhost:50549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 87f018464327f612ea7e8ff93d1d0774
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.codeborne.selenide.impl.WebdriverPhotographer.takeScreenshot(WebdriverPhotographer.java:13)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.savePageImageToFile(ScreenShotLaboratory.java:344)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.takeScreenShot(ScreenShotLaboratory.java:154)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.lambda$null$10(ScreenShotLaboratory.java:453)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.ifReportsFolderNotNull(ScreenShotLaboratory.java:541)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.lambda$takeScreenshot$11(ScreenShotLaboratory.java:452)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.ifWebDriverStarted(ScreenShotLaboratory.java:531)
-	at com.codeborne.selenide.impl.ScreenShotLaboratory.takeScreenshot(ScreenShotLaboratory.java:451)
-	at com.codeborne.selenide.ex.UIAssertionError.wrapThrowable(UIAssertionError.java:76)
-	at com.codeborne.selenide.ex.UIAssertionError.wrap(UIAssertionError.java:63)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.shouldBe(Unknown Source)
-	at com.demo.core.base.PageTools.shouldBe(PageTools.java:60)
-	at com.demo.core.base.PageTools.waitForElementVisibility(PageTools.java:200)
-	at com.demo.pages.AmazonBookPage.getBookInfo(AmazonBookPage.java:16)
-	at com.demo.pages.AmazonBookList.checkEveryProductStats(AmazonBookList.java:36)
-	at com.demo.actions.AmazonBooksActions.collectEachBookInTheList(AmazonBooksActions.java:24)
-	at com.demo.login.ComparingAGivenBookWithTheFirstPageBooksInAmazon.bookInTheListVerification(ComparingAGivenBookWithTheFirstPageBooksInAmazon.java:20)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-14:13:07 | ERROR | TestListener:28                          | FAILED test: bookInTheListVerification
-14:13:07 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on MAC (87f018464327f612ea7e8ff93d1d0774)...
-14:13:07 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 152 ms
-14:13:07 | INFO | ComparingAGivenBookWithTheFirstPageBooksInAmazon:28 | Web driver closed!
-14:13:07 | INFO | CloseDriverCommand:30                    | Close webdriver: 41 -> ChromeDriver: chrome on MAC (null)...
-14:13:07 | INFO | FileHelper:81                            | Deleted empty folder: /Users/max_horokhov/Desktop/Projects/Archive/build/downloads/1692011525866_25118_1
-14:13:07 | INFO | CloseDriverCommand:32                    | Closed webdriver 41 in 0 ms
+16:37:39 | INFO | ComparingAGivenBookWithTheFirstPageBooksInAmazon:28 | Creating web driver configuration...
+16:37:39 | INFO | ComparingAGivenBookWithTheFirstPageBooksInAmazon:28 | Open browser...
+16:37:39 | INFO | WebDriverThreadLocalContainer:138        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+16:37:39 | INFO | FileHelper:56                            | Creating folder: /Users/max_horokhov/Desktop/Projects/Archive/build/downloads/1692020259547_36580_1
+16:37:40 | INFO | WebDriverFactory:135                     | BrowserName=chrome Version=115.0.5790.170 Platform=MAC
+16:37:40 | INFO | WebDriverFactory:78                      | Selenide v. 5.19.0
+16:37:40 | INFO | WebDriverFactory:129                     | Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+16:37:40 | INFO | CreateDriverCommand:70                   | Create webdriver in current thread 1: ChromeDriver -> ChromeDriver: chrome on MAC (36be583229fcbedfe60579fd3130dae0)
+16:37:41 | INFO | TestListener:18                          | STARTED test: bookInTheListVerification
+16:37:41 | INFO | SelenideTools:52                         | Opening url 'https://www.amazon.com/'
+16:37:43 | INFO | AmazonHomePage:28                        | Choose filter option --> Books, element --> By.xpath: //select[@id='searchDropdownBox']
+16:37:43 | INFO | AmazonHomePage:28                        | Search for item 'Java
+16:37:43 | INFO | AmazonHomePage:28                        | Search for item, element --> By.id: nav-search-submit-button
+16:37:45 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[1]
+16:37:45 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[1]
+16:37:48 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:37:48 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:37:48 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:37:48 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:37:49 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[2]
+16:37:49 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[2]
+16:37:52 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:37:52 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:37:52 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:37:52 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:37:52 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[3]
+16:37:53 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[3]
+16:37:56 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:37:56 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:37:56 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:37:56 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:37:56 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[4]
+16:37:56 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[4]
+16:37:59 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:37:59 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:37:59 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:37:59 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:00 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[5]
+16:38:00 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[5]
+16:38:02 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:02 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:02 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:02 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:03 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[6]
+16:38:03 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[6]
+16:38:06 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:06 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:06 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:06 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:06 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[7]
+16:38:06 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[7]
+16:38:09 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:09 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:09 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:09 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:10 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[8]
+16:38:10 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[8]
+16:38:13 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:13 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:13 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:13 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:13 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[9]
+16:38:13 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[9]
+16:38:16 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:16 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:16 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:16 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:17 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[10]
+16:38:17 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[10]
+16:38:19 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:19 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:19 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:19 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:20 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[11]
+16:38:20 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[11]
+16:38:23 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:23 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:23 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:23 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:24 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[12]
+16:38:24 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[12]
+16:38:26 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:26 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:26 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:26 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:27 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[13]
+16:38:27 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[13]
+16:38:30 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:30 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:30 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:30 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:30 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[14]
+16:38:30 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[14]
+16:38:33 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:33 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:33 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:33 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:34 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[15]
+16:38:34 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[15]
+16:38:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:37 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:38 | INFO | AmazonBookList:28                        | Check every product stats, elements --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[16]
+16:38:38 | INFO | AmazonBookList:28                        | Check every product stats, element --> By.xpath: (//a[@class='a-link-normal s-no-outline' or class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[16]
+16:38:41 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:41 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:41 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:41 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:41 | INFO | SelenideTools:92                         | Open url in new window
+16:38:46 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //h1[@id='title'] | //span[@id='productTitle']
+16:38:46 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='bylineInfo']
+16:38:46 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //span[@class='a-size-base a-color-secondary' or @class='a-size-base a-color-price a-color-price']
+16:38:46 | INFO | AmazonBookPage:28                        | Get book info, element --> By.xpath: //div[@id='centerCol' or @class='a-fixed-right-grid-col a-col-left'] | //div[@id='aud_center_col']
+16:38:46 | INFO | TestListener:23                          | PASSED test: bookInTheListVerification
+16:38:46 | INFO | CloseDriverCommand:30                    | Close webdriver: 1 -> ChromeDriver: chrome on MAC (36be583229fcbedfe60579fd3130dae0)...
+16:38:47 | INFO | CloseDriverCommand:32                    | Closed webdriver 1 in 180 ms
+16:38:47 | INFO | ComparingAGivenBookWithTheFirstPageBooksInAmazon:28 | Web driver closed!
+16:38:47 | INFO | CloseDriverCommand:30                    | Close webdriver: 40 -> ChromeDriver: chrome on MAC (null)...
+16:38:47 | INFO | FileHelper:81                            | Deleted empty folder: /Users/max_horokhov/Desktop/Projects/Archive/build/downloads/1692020259547_36580_1
+16:38:47 | INFO | CloseDriverCommand:32                    | Closed webdriver 40 in 0 ms
